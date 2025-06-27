@@ -1,19 +1,10 @@
-def fibonacci_iterative(n):
-    """Generates the first n Fibonacci numbers iteratively."""
-    a, b = 0, 1
-    if n <= 0:
-        return []
-    elif n == 1:
-        return [0]
+    if n < 0:
+        raise ValueError
+    elif n < 2:
+        return n
     else:
-        sequence = [a, b]
-        for _ in range(2, n):
-            next_fib = a + b
-            sequence.append(next_fib)
-            a, b = b, next_fib
-        return sequence
+        return fibo(n - 1) + fibo(n - 2)
 
-# Example usage:
-num_terms = 10
-fib_sequence = fibonacci_iterative(num_terms)
-print(f"Fibonacci sequence (first {num_terms} terms): {fib_sequence}")
+
+if __name__ == '__main__':
+    print(fibo(4)))
