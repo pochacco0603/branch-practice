@@ -1,3 +1,4 @@
+def fibo(n):
     if n < 0:
         raise ValueError
     elif n < 2:
@@ -7,4 +8,4 @@
 
 
 if __name__ == '__main__':
-    print(fibo(4)))
+    print(fibo(4))
