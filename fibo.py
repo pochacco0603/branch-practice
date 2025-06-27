@@ -9,3 +9,5 @@ def fibo(n):
 
 if __name__ == '__main__':
     print(fibo(4))
+    print("it work!")
+    
